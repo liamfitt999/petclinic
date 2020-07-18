@@ -66,7 +66,7 @@ public class ClinicServiceTests {
         assertThat(owners.size()).isEqualTo(2);
 
         owners = this.owners.findByLastName("Daviss");
-        assertThat(owners.isEmpty()).isTrue();
+        assertThat(owners.isEmpty()).isFalse();
     }
 
     @Test
